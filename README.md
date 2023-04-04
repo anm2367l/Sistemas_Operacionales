@@ -1,6 +1,6 @@
 # Sistemas_Operacionales
 
-Estudiante: Lewing Andres Mendez Ortiz
-codigo: 2162120
-Materia: Sistemas Operacionales
+Estudiante: Lewing Andres Mendez Ortiz \n
+codigo: 2162120 \n
+Materia: Sistemas Operacionales \n
 Grupo: H1
