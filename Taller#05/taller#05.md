@@ -111,5 +111,32 @@ Desventajas:
 - Pueden ser menos predecibles, ya que el tamaño variable de los mensajes puede dificultar la planificación del uso de recursos.
 
 ### 7. Describa los estados de un proceso.
+- Nuevo: Este es el estado en el que se encuentra un proceso recién creado. El proceso aún no ha sido asignado a un procesador y está esperando para ser admitido por el sistema operativo.
+
+- Listo: Una vez que el proceso ha sido admitido por el sistema operativo, se mueve al estado de Listo. En este estado, el proceso está esperando ser asignado a un procesador para su ejecución. El sistema operativo mantiene una lista de procesos en estado de Listo, ordenados por prioridad y listos para ser ejecutados.
+
+- En ejecución: Cuando un procesador ha sido asignado al proceso, el proceso pasa al estado de En ejecución. En este estado, el proceso está activo y está ejecutando sus instrucciones.
+
+- Bloqueado: Si el proceso necesita esperar por algún evento, como una entrada/salida, espera de un recurso, u otra tarea que requiera tiempo, pasa al estado Bloqueado. En este estado, el proceso no puede continuar su ejecución hasta que se complete el evento o se libere el recurso.
+
+- Terminado: Cuando el proceso ha completado su ejecución, pasa al estado Terminado. En este estado, el sistema operativo libera todos los recursos asociados con el proceso, incluyendo la memoria y los procesadores.
+
+- Suspensión: El estado de Suspensión no es un estado estándar en todos los sistemas operativos, pero algunos sistemas lo tienen. En este estado, el proceso ha sido temporalmente detenido y no está ejecutando sus instrucciones. Sin embargo, el proceso no ha sido terminado y puede ser reanudado posteriormente en el estado en el que se detuvo
+
+
 ### 8. Que datos se encuentran en un PCB.
+Los tipos de datos depende del sistema operativo, los mas comunes serian:
+- Identificación del proceso: El PCB contiene un identificador único para el proceso, que lo distingue de otros procesos en el sistema.
+- Estado del proceso: El PCB mantiene un registro del estado actual del proceso, es decir, si está en ejecución, bloqueado, listo o terminado.
+- Contador de programa: El PCB también almacena el valor del contador de programa del proceso, que indica la dirección de la próxima instrucción a ejecutar.
+- Registro de propósito general: El PCB puede contener una copia de los registros de propósito general del procesador, que son necesarios para reanudar la ejecución del proceso después de una interrupción o cambio de contexto.
+- Información de planificación: El PCB mantiene información relevante para la planificación de procesos, como la prioridad, el tiempo de espera, entre otros.
+- Información de memoria: El PCB almacena información sobre la memoria asignada al proceso, como la dirección base y el límite superior.
+- Información de entrada/salida: El PCB mantiene una lista de los recursos de entrada/salida asignados al proceso, así como su estado actual.
+- Información de permisos y recursos: El PCB almacena información sobre los permisos y recursos que se han concedido al proceso.
+
 ### 9. Describa un modelo de comunicación Cliente-Servidor.
+
+EEl modelo Cliente-Servidor es un patrón de comunicación que se utiliza para proporcionar servicios a través de una red de computadoras. En este modelo, un programa cliente envía solicitudes de servicios o recursos a un programa servidor a través de la red. El servidor procesa las solicitudes de los clientes y envía las respuestas de vuelta al cliente. Este modelo se compone de dos componentes principales: el cliente, que solicita servicios, y el servidor, que proporciona servicios. Se utiliza comúnmente en entornos de red para servicios como correo electrónico, archivos, bases de datos, entre otros.
+
+
