@@ -1,4 +1,5 @@
 ### 1. Por qué es importante para un planificador diferenciar entre un programa limitado por I/O y por CPU?
+Se debe dar importancia por: 
 - Un programa limitado por I/O es aquel que espera a que se completen las operaciones de entrada/salida, como leer o escribir en disco, realizar operaciones de red o interactuar con dispositivos periféricos. Estas operaciones son relativamente lentas en comparación con el tiempo de procesamiento del CPU. En este caso, el tiempo de CPU utilizado por el programa es generalmente mínimo en comparación con el tiempo total que tarda en ejecutarse debido a las operaciones de entrada/salida.
 
 - Por otro lado, un programa limitado por CPU es aquel que realiza operaciones computacionalmente intensivas y requiere una cantidad significativa de tiempo de CPU para su ejecución. Estos programas utilizan el tiempo de CPU de manera más activa y pueden consumir recursos del sistema durante períodos prolongados.
@@ -19,11 +20,11 @@ Por otra parte, al priorizar una alta utilización de la CPU, es posible que las
 ### 5. Considere el siguiente conjunto de procesos, todos llegan al mismo tiempo en el orden del subíndice:
 
 ### 6. Cual es el tiempo de ejecución de cada proceso para cada algoritmo?
-p1 - 10
-p2 - 1
-p3 - 2
-p4 - 1
-p5 - 5
+p1 - 10;
+p2 - 1;
+p3 - 2;
+p4 - 1;
+p5 - 5;
 
 El tiempo real dependera de la capacidad de computo de la maquina, pero de forma general se asigna un tiempo de definido coforme a la tabla.
 
